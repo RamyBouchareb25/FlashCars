@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Open+Sans:ital@1&family=PT+Sans+Caption&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=PT+Sans+Caption&family=Roboto&display=swap');
+body {
+    background: url("Images/Background.png") no-repeat fixed center/100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 86vh;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#quizArea {
+    display: flex;
+    flex-direction: column;
+    width: 56vw;
+    height: 56vh;
+    justify-content: space-around;
+
+}
+
+.card {
+    background-color: #d902ee;
+    color: #ffd79d;
+    border-radius: 20px;
+    height: 12vh;
+    width: 12vw;
+    text-align: center;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#first-row, #second-row, #third-row{
+    height: 46vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p {
+    width: 12vw;
+}
+
+.card:hover {
+    height: 16vh;
+    width: 16vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'PT Sans Caption', sans-serif;
+}
