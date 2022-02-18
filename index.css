@@ -36,6 +36,8 @@ body {
     align-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 #first-row, #second-row, #third-row{
@@ -46,7 +48,7 @@ body {
     align-items: center;
 }
 
-p {
+.front {
     width: 12vw;
 }
 
@@ -59,4 +61,18 @@ p {
 
 h1 {
     font-family: 'PT Sans Caption', sans-serif;
+}
+
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card:active{
+    transform: rotateY(180deg);
+    transition: all .5s ease;
 }
